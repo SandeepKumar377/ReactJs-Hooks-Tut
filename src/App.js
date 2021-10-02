@@ -1,5 +1,6 @@
 import './App.css';
-import FunctionCounterThree from './components/FunctionCounterThree';
+import FunctionCounterFour from './components/FunctionCounterFour';
+// import FunctionCounterThree from './components/FunctionCounterThree';
 // import ClassCounter from './components/ClassCounter';
 // import ClassCounterTwo from './components/ClassCounterTwo';
 // import FunctionCounter from './components/FunctionCounter';
@@ -8,7 +9,8 @@ import FunctionCounterThree from './components/FunctionCounterThree';
 function App() {
   return (
     <div className="App">
-      <FunctionCounterThree/>
+      <FunctionCounterFour/>
+      {/* <FunctionCounterThree/> */}
        {/* <ClassCounter/>
        <FunctionCounter/>
        <FunctionCounterTwo/>
