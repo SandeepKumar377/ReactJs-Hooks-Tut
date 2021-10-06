@@ -1,5 +1,7 @@
 import './App.css';
-import FunctionCounterFour from './components/FunctionCounterFour';
+import ClassCounterOne from './components/ClassCounterOne';
+import HookCounterOne from './components/HookCounterOne';
+// import FunctionCounterFour from './components/FunctionCounterFour';
 // import FunctionCounterThree from './components/FunctionCounterThree';
 // import ClassCounter from './components/ClassCounter';
 // import ClassCounterTwo from './components/ClassCounterTwo';
@@ -9,7 +11,9 @@ import FunctionCounterFour from './components/FunctionCounterFour';
 function App() {
   return (
     <div className="App">
-      <FunctionCounterFour/>
+      <ClassCounterOne/>
+      <HookCounterOne/>
+      {/* <FunctionCounterFour/> */}
       {/* <FunctionCounterThree/> */}
        {/* <ClassCounter/>
        <FunctionCounter/>
