@@ -1,6 +1,8 @@
 import './App.css';
-import ClassCounterOne from './components/ClassCounterOne';
-import HookCounterOne from './components/HookCounterOne';
+import ClassMouse from './components/ClassMouse';
+import HookMouse from './components/HookMouse';
+// import ClassCounterOne from './components/ClassCounterOne';
+// import HookCounterOne from './components/HookCounterOne';
 // import FunctionCounterFour from './components/FunctionCounterFour';
 // import FunctionCounterThree from './components/FunctionCounterThree';
 // import ClassCounter from './components/ClassCounter';
@@ -11,8 +13,10 @@ import HookCounterOne from './components/HookCounterOne';
 function App() {
   return (
     <div className="App">
+      {/* <ClassMouse/> */}
+      <HookMouse/>
       {/* <ClassCounterOne/> */}
-      <HookCounterOne/>
+      {/* <HookCounterOne/> */}
       {/* <FunctionCounterFour/> */}
       {/* <FunctionCounterThree/> */}
        {/* <ClassCounter/>
