@@ -1,6 +1,9 @@
-import React from 'react';
+import React, { useReducer } from 'react';
 import './App.css';
-import ReducerCounterThree from './components/ReducerCounterThree';
+import UseReducerWithContextA from './components/UseReducerWithContextA';
+import UseReducerWithContextB from './components/UseReducerWithContextB';
+import UseReducerWithContextC from './components/UseReducerWithContextC';
+// import ReducerCounterThree from './components/ReducerCounterThree';
 // import ReducerCounterOneTwo from './components/ReducerCounterTwo';
 // import ReducerCounterOne from './components/ReducerCounterOne';
 // import ComponentC from './components/ComponentC';
@@ -21,10 +24,34 @@ import ReducerCounterThree from './components/ReducerCounterThree';
 
 // export const UserContext = React.createContext()
 // export const ChannelContext = React.createContext()
+
+export const CountContext = React.createContext()
+
+const initialState = 0
+const reducer = (state, action) => {
+  switch (action) {
+    case 'increment':
+      return state + 1
+    case 'decrement':
+      return state - 1
+    case 'reset':
+      return initialState
+    default:
+      return state
+  }
+}
+
 function App() {
+  const [count, dispatch] = useReducer(reducer, initialState)
   return (
     <div className="App">
-      <ReducerCounterThree />
+      <CountContext.Provider value={{countState: count, countDispatch: dispatch}} >
+        Count - {count}
+        <UseReducerWithContextA />
+        <UseReducerWithContextB />
+        <UseReducerWithContextC />
+      </CountContext.Provider>
+      {/* <ReducerCounterThree /> */}
       {/* <ReducerCounterOneTwo /> */}
       {/* <ReducerCounterOne/> */}
       {/* <UserContext.Provider value={'Sandeep'}>
