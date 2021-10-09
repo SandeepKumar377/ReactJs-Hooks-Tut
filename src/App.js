@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
-import ReducerCounterOneTwo from './components/ReducerCounterTwo';
+import ReducerCounterThree from './components/ReducerCounterThree';
+// import ReducerCounterOneTwo from './components/ReducerCounterTwo';
 // import ReducerCounterOne from './components/ReducerCounterOne';
 // import ComponentC from './components/ComponentC';
 // import DataFetching from './components/DataFetching';
@@ -23,7 +24,8 @@ import ReducerCounterOneTwo from './components/ReducerCounterTwo';
 function App() {
   return (
     <div className="App">
-      <ReducerCounterOneTwo />
+      <ReducerCounterThree />
+      {/* <ReducerCounterOneTwo /> */}
       {/* <ReducerCounterOne/> */}
       {/* <UserContext.Provider value={'Sandeep'}>
         <ChannelContext.Provider value={'Kumar'}>
