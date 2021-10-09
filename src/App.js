@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
-import ComponentC from './components/ComponentC';
+import ReducerCounterOne from './components/ReducerCounterOne';
+// import ComponentC from './components/ComponentC';
 // import DataFetching from './components/DataFetching';
 // import IntervalClassCounter from './components/IntervalClassCounter';
 // import IntervalHookCounter from './components/IntervalHookCounter';
@@ -16,16 +17,17 @@ import ComponentC from './components/ComponentC';
 // import FunctionCounter from './components/FunctionCounter';
 // import FunctionCounterTwo from './components/FunctionCounterTwo';
 
-export const UserContext = React.createContext()
-export const ChannelContext = React.createContext()
+// export const UserContext = React.createContext()
+// export const ChannelContext = React.createContext()
 function App() {
   return (
     <div className="App">
-      <UserContext.Provider value={'Sandeep'}>
+      <ReducerCounterOne/>
+      {/* <UserContext.Provider value={'Sandeep'}>
         <ChannelContext.Provider value={'Kumar'}>
           <ComponentC />
         </ChannelContext.Provider>
-      </UserContext.Provider>
+      </UserContext.Provider> */}
 
       {/* <DataFetching /> */}
       {/* <IntervalClassCounter/>
