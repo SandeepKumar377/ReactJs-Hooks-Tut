@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
-import ReducerCounterOne from './components/ReducerCounterOne';
+import ReducerCounterOneTwo from './components/ReducerCounterTwo';
+// import ReducerCounterOne from './components/ReducerCounterOne';
 // import ComponentC from './components/ComponentC';
 // import DataFetching from './components/DataFetching';
 // import IntervalClassCounter from './components/IntervalClassCounter';
@@ -22,7 +23,8 @@ import ReducerCounterOne from './components/ReducerCounterOne';
 function App() {
   return (
     <div className="App">
-      <ReducerCounterOne/>
+      <ReducerCounterOneTwo />
+      {/* <ReducerCounterOne/> */}
       {/* <UserContext.Provider value={'Sandeep'}>
         <ChannelContext.Provider value={'Kumar'}>
           <ComponentC />
