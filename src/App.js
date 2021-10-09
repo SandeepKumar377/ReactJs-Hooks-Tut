@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
-import DataFetchingOne from './components/DataFetchingOne';
+import DataFetchingTwo from './components/DataFetchingTwo';
+// import DataFetchingOne from './components/DataFetchingOne';
 // import UseReducerWithContextA from './components/UseReducerWithContextA';
 // import UseReducerWithContextB from './components/UseReducerWithContextB';
 // import UseReducerWithContextC from './components/UseReducerWithContextC';
@@ -46,7 +47,8 @@ function App() {
   // const [count, dispatch] = useReducer(reducer, initialState)
   return (
     <div className="App">
-      <DataFetchingOne/>
+      <DataFetchingTwo/>
+      {/* <DataFetchingOne/> */}
       {/* <CountContext.Provider value={{countState: count, countDispatch: dispatch}} >
         Count - {count}
         <UseReducerWithContextA />
