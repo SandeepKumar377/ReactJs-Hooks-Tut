@@ -1,8 +1,9 @@
-import React, { useReducer } from 'react';
+import React from 'react';
 import './App.css';
-import UseReducerWithContextA from './components/UseReducerWithContextA';
-import UseReducerWithContextB from './components/UseReducerWithContextB';
-import UseReducerWithContextC from './components/UseReducerWithContextC';
+import DataFetchingOne from './components/DataFetchingOne';
+// import UseReducerWithContextA from './components/UseReducerWithContextA';
+// import UseReducerWithContextB from './components/UseReducerWithContextB';
+// import UseReducerWithContextC from './components/UseReducerWithContextC';
 // import ReducerCounterThree from './components/ReducerCounterThree';
 // import ReducerCounterOneTwo from './components/ReducerCounterTwo';
 // import ReducerCounterOne from './components/ReducerCounterOne';
@@ -25,32 +26,33 @@ import UseReducerWithContextC from './components/UseReducerWithContextC';
 // export const UserContext = React.createContext()
 // export const ChannelContext = React.createContext()
 
-export const CountContext = React.createContext()
+// export const CountContext = React.createContext()
 
-const initialState = 0
-const reducer = (state, action) => {
-  switch (action) {
-    case 'increment':
-      return state + 1
-    case 'decrement':
-      return state - 1
-    case 'reset':
-      return initialState
-    default:
-      return state
-  }
-}
+// const initialState = 0
+// const reducer = (state, action) => {
+//   switch (action) {
+//     case 'increment':
+//       return state + 1
+//     case 'decrement':
+//       return state - 1
+//     case 'reset':
+//       return initialState
+//     default:
+//       return state
+//   }
+// }
 
 function App() {
-  const [count, dispatch] = useReducer(reducer, initialState)
+  // const [count, dispatch] = useReducer(reducer, initialState)
   return (
     <div className="App">
-      <CountContext.Provider value={{countState: count, countDispatch: dispatch}} >
+      <DataFetchingOne/>
+      {/* <CountContext.Provider value={{countState: count, countDispatch: dispatch}} >
         Count - {count}
         <UseReducerWithContextA />
         <UseReducerWithContextB />
         <UseReducerWithContextC />
-      </CountContext.Provider>
+      </CountContext.Provider> */}
       {/* <ReducerCounterThree /> */}
       {/* <ReducerCounterOneTwo /> */}
       {/* <ReducerCounterOne/> */}
