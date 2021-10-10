@@ -1,6 +1,8 @@
 import React from 'react';
 import './App.css';
-import UseRefHook from './components/UseRefHook';
+import ClassTimer from './components/ClassTimer';
+import HookTimer from './components/HookTimer';
+// import UseRefHook from './components/UseRefHook';
 // import UseMemoCounter from './components/UseMemoCounter';
 // import ParentComponent from './components/ParentComponent';
 // import DataFetchingTwo from './components/DataFetchingTwo';
@@ -50,7 +52,9 @@ function App() {
   // const [count, dispatch] = useReducer(reducer, initialState)
   return (
     <div className="App">
-      <UseRefHook/>
+      <ClassTimer />
+      <HookTimer />
+      {/* <UseRefHook/> */}
       {/* <UseMemoCounter/> */}
       {/* <ParentComponent/> */}
       {/* <DataFetchingTwo/> */}
