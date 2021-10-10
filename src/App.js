@@ -1,7 +1,9 @@
 import React from 'react';
 import './App.css';
-import CustomHookWithDocTitleOne from './components/CustomHookWithDocTitleOne';
-import CustomHookWithDocTitleTwo from './components/CustomHookWithDocTitleTwo';
+import CustomHookWithCounterOne from './components/CustomHookWithCounterOne';
+import CustomHookWithCounterTwo from './components/CustomHookWithCounterTwo';
+// import CustomHookWithDocTitleOne from './components/CustomHookWithDocTitleOne';
+// import CustomHookWithDocTitleTwo from './components/CustomHookWithDocTitleTwo';
 // import ClassTimer from './components/ClassTimer';
 // import HookTimer from './components/HookTimer';
 // import UseRefHook from './components/UseRefHook';
@@ -54,8 +56,10 @@ function App() {
   // const [count, dispatch] = useReducer(reducer, initialState)
   return (
     <div className="App">
-      <CustomHookWithDocTitleOne/>
-      <CustomHookWithDocTitleTwo/>
+      <CustomHookWithCounterOne/>
+      <CustomHookWithCounterTwo/>
+      {/* <CustomHookWithDocTitleOne/>
+      <CustomHookWithDocTitleTwo/> */}
       {/* <ClassTimer />
       <HookTimer /> */}
       {/* <UseRefHook/> */}
